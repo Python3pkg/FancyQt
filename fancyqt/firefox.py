@@ -2,8 +2,8 @@ import sip
 try:
     sip.setapi('QString', 2)
     sip.setapi('QVariant', 2)
-except ValueError, e:
-    print e
+except ValueError as e:
+    print(e)
 
 import fancyqt.firefox_rc
 
